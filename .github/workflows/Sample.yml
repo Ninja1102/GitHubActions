@@ -1,0 +1,10 @@
+name: Env checking
+
+on:
+    workflow_dispatch:
+
+jobs:
+    windows-env-var:
+        runs-on: windows-latest
+        steps:
+            - run: echo "$RUNNER_WORKSPACE"
